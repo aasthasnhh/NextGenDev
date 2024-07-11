@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+class Hello{
+    public static void main(String[] args) {
+       System.out.print("Enter your name: ");
+       Scanner sc = new Scanner(System.in);
+       String name = sc.next();
+
+       System.out.print("Enter your Maths marks: ");
+       Scanner sc1 = new Scanner(System.in);
+       int maths = sc1.nextInt();
+
+       System.out.print("Enter your English marks: ");
+       int english = sc1.nextInt();
+
+       System.out.print("Enter your Hindi marks:  ");
+       int hindi = sc1.nextInt();
+
+       System.out.print("Enter your Science marks:  ");
+       int science = sc1.nextInt();
+
+       System.out.print(("Enter your Social Science marks: "));
+       int sst = sc1.nextInt();
+
+       int average=(maths + english + hindi + science + sst)/5;
+
+       if(average>90){
+        System.out.println(name + " has obtained Grade 'A'");
+       }
+       else if(average>80){
+        System.out.println(name + " has obtained Grade 'B'");
+       }
+       else if (average>70){
+        System.out.println(name + " has obtained Grade 'C'");
+       }
+       else if(average>60){
+        System.out.println(name + " has obtained Grade 'D'");
+       }
+       else if(average>50){
+        System.out.println(name + " has obtained Grade 'E'");
+       }
+       else{
+        System.out.println(name + " is fail");
+       }
+
+    }
+}
